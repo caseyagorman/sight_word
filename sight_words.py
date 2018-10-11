@@ -5,12 +5,18 @@ from collections import Counter
 import csv
 from itertools import chain
 
+students = [ {"name":"Jaayden","words":[],"review words": [], "reading strategy": [], "group": ""} ]
+
+pickle.dump( students, open( "save.p", "wb" ) )
+
+students = pickle.load( open( "save.p", "rb" ) )
+
 students_path = './students.pkl'
 
 def save_students(students):
     with open(students_path, 'wb') as fp:
         pickle.dump(students, fp)
-        # save_students(students)
+        save_students(students)
 
 
 def load_students():
