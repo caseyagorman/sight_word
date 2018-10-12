@@ -16,7 +16,7 @@ students_path = './students.pkl'
 def save_students(students):
     with open(students_path, 'wb') as fp:
         pickle.dump(students, fp)
-        save_students(students)
+        # save_students(students)
 
 
 def load_students():
