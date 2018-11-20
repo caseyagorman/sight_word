@@ -46,7 +46,7 @@ p27
 g5
 sS'name'
 p28
-S'Big Boi'
+S'Selena'
 p29
 sS'reading strategy'
 p30
